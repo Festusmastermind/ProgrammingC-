@@ -1,0 +1,46 @@
+import javax.swing.JOptionPane;
+public class main {
+	public static void main (String args[])
+	{
+		
+		JOptionPane.showMessageDialog(null, "WELCOME TO MY APPLICATION","AJ_app",JOptionPane.INFORMATION_MESSAGE);
+		String A, B;
+		int a, b;
+		A = JOptionPane.showInputDialog("Enter the first value");
+	    a = Integer.parseInt(A);
+	    B = JOptionPane.showInputDialog("Enter the second value");
+	    b = Integer.parseInt(B);
+	    if (a>b)
+	    {
+	    	JOptionPane.showMessageDialog(null, a+" Is Larger");
+	    }
+	    else if (a<b)
+	    {
+	    	JOptionPane.showMessageDialog(null, b+" Is Larger");
+	    }
+	    else
+	    {
+	    	JOptionPane.showMessageDialog(null, a+" is Equal to "+b);
+	    }
+	   // the number 2c 
+	    int any;
+	    String myany;
+	    int i = 0;
+	    while (i<=5)
+	    {
+	    	myany = JOptionPane.showInputDialog(" Enter any integer value");
+	    	any = Integer.parseInt(myany);
+	    	
+	    	if ((any%2)==0)
+	    	{
+	    		JOptionPane.showMessageDialog(null,any+" is Even number");
+	    	}
+	    	else
+	    	{
+	    		JOptionPane.showMessageDialog(null,any+" is Odd number");
+	    	}
+	    	i += 1;
+	    }
+	}
+
+}

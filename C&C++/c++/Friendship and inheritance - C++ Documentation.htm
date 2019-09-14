@@ -1,0 +1,340 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Friendship and inheritance - C++ Documentation</title>
+<style type="text/css">.hierarchy DIV {width:100px; height:24px; text-align:center; padding-top:8px; border:black 1px solid} </style>
+<link rel="shortcut icon" type="image/x-icon" href="http://www.cplusplus.com/favicon.ico">
+<link rel="stylesheet" type="text/css" href="Friendship%20and%20inheritance%20-%20C++%20Documentation_files/main29f.css">
+<script src="Friendship%20and%20inheritance%20-%20C++%20Documentation_files/main29f.js" type="text/javascript"></script>
+<script type="text/javascript">
+new LoginBox('CH_boxLogin',1);</script>
+</head><body>
+<div id="CH_header">
+	<a href="http://www.cplusplus.com/"><img src="Friendship%20and%20inheritance%20-%20C++%20Documentation_files/cpp-logo.png" alt="cplusplus.com" width="198" height="75"></a>
+	<div id="CH_bar">
+		<b><a href="http://www.cplusplus.com/">C++</a> : <a href="http://www.cplusplus.com/doc/">Documentation</a> : <a href="http://www.cplusplus.com/doc/tutorial/">C++ Language Tutorial</a> : Friendship and inheritance</b>
+	</div>
+	
+	<div id="CH_searchbox">
+		<form id="search" action="/search.do" method="get">
+		Search: <input name="q" size="13" class="txt"> <input value="Search" class="btn" type="submit">
+		</form>
+	</div>
+	<div id="CH_boxLogin"><div class="loginmessage">&nbsp;<img src="Friendship%20and%20inheritance%20-%20C++%20Documentation_files/waitblue.gif"></div>
+	</div>
+</div>
+<div id="CH_container">
+<table id="CH_containertbl"><tbody><tr>
+<td id="CH_nav">
+<table class="box">
+<thead>
+<tr><th><a href="http://www.cplusplus.com/">cplusplus.com</a></th></tr>
+</thead>
+<tbody>
+<tr><td class="folder"><a href="http://www.cplusplus.com/info/">Information</a></td></tr>
+<tr><td class="folder selected"><a href="http://www.cplusplus.com/doc/">Documentation</a></td></tr>
+<tr><td class="folder"><a href="http://www.cplusplus.com/reference/">Reference</a></td></tr>
+<tr><td class="folder"><a href="http://www.cplusplus.com/articles/">Articles</a></td></tr>
+<tr><td class="folder"><a href="http://www.cplusplus.com/forum/">Forum</a></td></tr>
+</tbody>
+</table>
+<table class="box">
+<thead><tr><th><a href="http://www.cplusplus.com/doc/">Documentation</a></th></tr></thead>
+<tbody><tr><td class="selected folder"><a href="http://www.cplusplus.com/doc/tutorial/">C++ Language Tutorial</a></td></tr>
+<tr><td><a href="http://www.cplusplus.com/doc/ascii/">Ascii Codes</a></td></tr>
+<tr><td><a href="http://www.cplusplus.com/doc/boolean/">Boolean Operations</a></td></tr>
+<tr><td><a href="http://www.cplusplus.com/doc/hex/">Numerical Bases</a></td></tr>
+</tbody>
+</table>
+<table class="box">
+<thead><tr><th><a href="http://www.cplusplus.com/doc/tutorial/">C++ Language Tutorial</a></th></tr></thead>
+<tbody><tr><td class="folder">Introduction:</td></tr>
+<tr><td class="indent"><a href="http://www.cplusplus.com/doc/tutorial/introduction/">Instructions for use</a></td></tr>
+<tr><td class="folder">Basics of C++:</td></tr>
+<tr><td class="indent"><a href="http://www.cplusplus.com/doc/tutorial/program_structure/">Structure of a program</a></td></tr>
+<tr><td class="indent"><a href="http://www.cplusplus.com/doc/tutorial/variables/">Variables. Data Types.</a></td></tr>
+<tr><td class="indent"><a href="http://www.cplusplus.com/doc/tutorial/constants/">Constants</a></td></tr>
+<tr><td class="indent"><a href="http://www.cplusplus.com/doc/tutorial/operators/">Operators</a></td></tr>
+<tr><td class="indent"><a href="http://www.cplusplus.com/doc/tutorial/basic_io/">Basic Input/Output</a></td></tr>
+<tr><td class="folder">Control Structures:</td></tr>
+<tr><td class="indent"><a href="http://www.cplusplus.com/doc/tutorial/control/">Control Structures</a></td></tr>
+<tr><td class="indent"><a href="http://www.cplusplus.com/doc/tutorial/functions/">Functions (I)</a></td></tr>
+<tr><td class="indent"><a href="http://www.cplusplus.com/doc/tutorial/functions2/">Functions (II)</a></td></tr>
+<tr><td class="folder">Compound Data Types:</td></tr>
+<tr><td class="indent"><a href="http://www.cplusplus.com/doc/tutorial/arrays/">Arrays</a></td></tr>
+<tr><td class="indent"><a href="http://www.cplusplus.com/doc/tutorial/ntcs/">Character Sequences</a></td></tr>
+<tr><td class="indent"><a href="http://www.cplusplus.com/doc/tutorial/pointers/">Pointers</a></td></tr>
+<tr><td class="indent"><a href="http://www.cplusplus.com/doc/tutorial/dynamic/">Dynamic Memory</a></td></tr>
+<tr><td class="indent"><a href="http://www.cplusplus.com/doc/tutorial/structures/">Data Structures</a></td></tr>
+<tr><td class="indent"><a href="http://www.cplusplus.com/doc/tutorial/other_data_types/">Other Data Types</a></td></tr>
+<tr><td class="folder">Object Oriented Programming:</td></tr>
+<tr><td class="indent"><a href="http://www.cplusplus.com/doc/tutorial/classes/">Classes (I)</a></td></tr>
+<tr><td class="indent"><a href="http://www.cplusplus.com/doc/tutorial/classes2/">Classes (II)</a></td></tr>
+<tr><td class="selected indent"><a href="http://www.cplusplus.com/doc/tutorial/inheritance/">Friendship and inheritance</a></td></tr>
+<tr><td class="indent"><a href="http://www.cplusplus.com/doc/tutorial/polymorphism/">Polymorphism</a></td></tr>
+<tr><td class="folder">Advanced Concepts:</td></tr>
+<tr><td class="indent"><a href="http://www.cplusplus.com/doc/tutorial/templates/">Templates</a></td></tr>
+<tr><td class="indent"><a href="http://www.cplusplus.com/doc/tutorial/namespaces/">Namespaces</a></td></tr>
+<tr><td class="indent"><a href="http://www.cplusplus.com/doc/tutorial/exceptions/">Exceptions</a></td></tr>
+<tr><td class="indent"><a href="http://www.cplusplus.com/doc/tutorial/typecasting/">Type Casting</a></td></tr>
+<tr><td class="indent"><a href="http://www.cplusplus.com/doc/tutorial/preprocessor/">Preprocessor directives</a></td></tr>
+<tr><td class="folder">C++ Standard Library:</td></tr>
+<tr><td class="indent"><a href="http://www.cplusplus.com/doc/tutorial/files/">Input/Output with files</a></td></tr>
+</tbody>
+</table>
+<div id="CH_subnav"></div>
+<br>
+<script type="text/javascript"><!--
+google_ad_client = "pub-7688470879129516";
+/* single square */
+google_ad_slot = "7465536459";
+google_ad_width = 125;
+google_ad_height = 125;
+//-->
+</script>
+<script type="text/javascript" src="Friendship%20and%20inheritance%20-%20C++%20Documentation_files/show_ads.js">
+</script><ins style="border: medium none ; margin: 0pt; padding: 0pt; display: inline-table; height: 125px; position: relative; visibility: visible; width: 125px;"><ins id="aswift_0_anchor" style="border: medium none ; margin: 0pt; padding: 0pt; display: block; height: 125px; position: relative; visibility: visible; width: 125px;"><iframe allowtransparency="true" hspace="0" marginwidth="0" marginheight="0" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){i+='.call';setTimeout(h,0)}else if(h.match){i+='.nav';w.location.replace(h)}s.log&amp;&amp;s.log.push(i)}" vspace="0" id="aswift_0" name="aswift_0" style="left: 0pt; position: absolute; top: 0pt;" width="125" frameborder="0" height="125" scrolling="no"></iframe></ins></ins>
+	</td>
+	<td id="CH_main">
+<script type="text/javascript"><!--
+google_ad_client = "pub-7688470879129516";
+google_ad_slot = "7973859818";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript" src="Friendship%20and%20inheritance%20-%20C++%20Documentation_files/show_ads.js">
+</script><ins style="border: medium none ; margin: 0pt; padding: 0pt; display: inline-table; height: 90px; position: relative; visibility: visible; width: 728px;"><ins id="aswift_1_anchor" style="border: medium none ; margin: 0pt; padding: 0pt; display: block; height: 90px; position: relative; visibility: visible; width: 728px;"><iframe allowtransparency="true" hspace="0" marginwidth="0" marginheight="0" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){i+='.call';setTimeout(h,0)}else if(h.match){i+='.nav';w.location.replace(h)}s.log&amp;&amp;s.log.push(i)}" vspace="0" id="aswift_1" name="aswift_1" style="left: 0pt; position: absolute; top: 0pt;" width="728" frameborder="0" height="90" scrolling="no"></iframe></ins></ins><br><div class="C_doctop">
+<h1>Friendship and inheritance</h1>
+<div class="right"></div>
+</div>
+<div class="docsubtop">
+<div class="right"></div>
+<div class="prototype"></div>
+</div>
+<a name="friend"></a><h3>Friend functions</h3>
+In principle, private and protected members of a class cannot be
+accessed from outside the same class in which they are declared.
+However, this rule does not affect <i>friends</i>.<br>
+<br>
+Friends are functions or classes declared with the <code>friend</code> keyword.<br>
+<br>
+If we want to declare an external function as friend of a class, thus
+allowing this function to have access to the private and protected
+members of this class, we do it by declaring a prototype of this
+external function within the class, and preceding it with the keyword <tt>friend</tt>:<br>
+<br>
+<div class="auto"><table class="split"><tbody><tr><td class="rownum"><tt>1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10<br>11<br>12<br>13<br>14<br>15<br>16<br>17<br>18<br>19<br>20<br>21<br>22<br>23<br>24<br>25<br>26<br>27<br>28<br>29<br>30<br>31<br>32<br></tt></td>
+<td class="source"><pre><code><cite>// friend functions</cite>
+<dfn>#include &lt;iostream&gt;</dfn>
+<var>using</var> <var>namespace</var> std;
+
+<var>class</var> CRectangle {
+    <var>int</var> width, height;
+  <var>public</var>:
+    <var>void</var> set_values (<var>int</var>, <var>int</var>);
+    <var>int</var> area () {<var>return</var> (width * height);}
+    <var>friend</var> CRectangle duplicate (CRectangle);
+};
+
+<var>void</var> CRectangle::set_values (<var>int</var> a, <var>int</var> b) {
+  width = a;
+  height = b;
+}
+
+CRectangle duplicate (CRectangle rectparam)
+{
+  CRectangle rectres;
+  rectres.width = rectparam.width*2;
+  rectres.height = rectparam.height*2;
+  <var>return</var> (rectres);
+}
+
+<var>int</var> main () {
+  CRectangle rect, rectb;
+  rect.set_values (2,3);
+  rectb = duplicate (rect);
+  cout &lt;&lt; rectb.area();
+  <var>return</var> 0;
+}</code></pre></td>
+<td class="output"><pre><samp>24 </samp></pre></td></tr></tbody></table></div>
+<br>
+<br>
+The <tt>duplicate</tt> function is a friend of <tt>CRectangle</tt>. From within that function we have been able to access the members <tt>width</tt> and <tt>height</tt> of different objects of type <tt>CRectangle</tt>, which are private members. Notice that neither in the declaration of <tt>duplicate()</tt> nor in its later use in <tt>main()</tt> have we considered <tt>duplicate</tt> a member of class <tt>CRectangle</tt>. It isn't! It simply has access to its private and protected members without being a member.<br>
+<br>
+The friend functions can serve, for example, to conduct operations
+between two different classes. Generally, the use of friend functions
+is out of an object-oriented programming methodology, so whenever
+possible it is better to use members of the same class to perform
+operations with them. Such as in the previous example, it would have
+been shorter to integrate <tt>duplicate()</tt> within the class <tt>CRectangle</tt>.<br>
+<br>
+<a name="friend_class"></a><h3>Friend classes</h3>
+Just as we have the possibility to define a friend function, we can
+also define a class as friend of another one, granting that first class
+access to the protected and private members of the second one.<br>
+<br>
+<div class="auto"><table class="split"><tbody><tr><td class="rownum"><tt>1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10<br>11<br>12<br>13<br>14<br>15<br>16<br>17<br>18<br>19<br>20<br>21<br>22<br>23<br>24<br>25<br>26<br>27<br>28<br>29<br>30<br>31<br>32<br>33<br>34<br>35<br>36<br></tt></td>
+<td class="source"><pre><code><cite>// friend class</cite>
+<dfn>#include &lt;iostream&gt;</dfn>
+<var>using</var> <var>namespace</var> std;
+
+<var>class</var> CSquare;
+
+<var>class</var> CRectangle {
+    <var>int</var> width, height;
+  <var>public</var>:
+    <var>int</var> area ()
+      {<var>return</var> (width * height);}
+    <var>void</var> convert (CSquare a);
+};
+
+<var>class</var> CSquare {
+  <var>private</var>:
+    <var>int</var> side;
+  <var>public</var>:
+    <var>void</var> set_side (<var>int</var> a)
+      {side=a;}
+    <var>friend</var> <var>class</var> CRectangle;
+};
+
+<var>void</var> CRectangle::convert (CSquare a) {
+  width = a.side;
+  height = a.side;
+}
+  
+<var>int</var> main () {
+  CSquare sqr;
+  CRectangle rect;
+  sqr.set_side(4);
+  rect.convert(sqr);
+  cout &lt;&lt; rect.area();
+  <var>return</var> 0;
+}</code></pre></td>
+<td class="output"><pre><samp>16</samp></pre></td></tr></tbody></table></div>
+<br>
+<br>
+In this example, we have declared <tt>CRectangle</tt> as a friend of <tt>CSquare</tt> so that <tt>CRectangle</tt> member functions could have access to the protected and private members of <tt>CSquare</tt>, more concretely to <tt>CSquare::side</tt>, which describes the side width of the square.<br>
+<br>
+You may also see something new at the beginning of the program: an empty declaration of class <tt>CSquare</tt>. This is necessary because within the declaration of <tt>CRectangle</tt> we refer to CSquare (as a parameter in <tt>convert()</tt>). The definition of <tt>CSquare</tt> is included later, so if we did not include a previous empty declaration for <tt>CSquare</tt> this class would not be visible from within the definition of <tt>CRectangle</tt>.<br>
+<br>
+Consider that friendships are not corresponded if we do not explicitly specify so. In our example, <tt>CRectangle</tt> is considered as a friend class by <tt>CSquare</tt>, but <tt>CRectangle</tt> does not consider <tt>CSquare</tt> to be a friend, so <tt>CRectangle</tt> can access the protected and private members of <tt>CSquare</tt> but not the reverse way. Of course, we could have declared also <tt>CSquare</tt> as friend of <tt>CRectangle</tt> if we wanted to.<br>
+<br>
+Another property of friendships is that they are <i>not transitive</i>: The friend of a friend is not considered to be a friend unless explicitly specified.<br>
+<br>
+<a name="inheritance"></a><h3>Inheritance between classes</h3>
+A key feature of C++ classes is inheritance. Inheritance allows to
+create classes which are derived from other classes, so that they
+automatically include some of its "parent's" members, plus its own. For
+example, we are going to suppose that we want to declare a series of
+classes that describe polygons like our <tt>CRectangle</tt>, or like <tt>CTriangle</tt>. They have certain common properties, such as both can be described by means of only two sides: height and base.<br>
+<br>
+This could be represented in the world of classes with a class <tt>CPolygon</tt> from which we would derive the two other ones: <tt>CRectangle</tt> and <tt>CTriangle</tt>.<br>
+<br>
+<img src="Friendship%20and%20inheritance%20-%20C++%20Documentation_files/inheritance.gif" alt="">
+<br>
+The class <tt>CPolygon</tt> would contain members that are common for both types of polygon. In our case: <tt>width</tt> and <tt>height</tt>. And <tt>CRectangle</tt> and <tt>CTriangle</tt> would be its derived classes, with specific features that are different from one type of polygon to the other.<br>
+<br>
+Classes that are derived from others inherit all the accessible members
+of the base class. That means that if a base class includes a member <tt>A</tt> and we derive it to another class with another member called <tt>B</tt>, the derived class will contain both members <tt>A</tt> and <tt>B</tt>.<br>
+<br>
+In order to derive a class from another, we use a colon (<tt>:</tt>) in the declaration of the derived class using the following format: <br>
+<br>
+<tt>
+class derived_class_name: public base_class_name<br>
+{ /*...*/ };<br>
+</tt>
+<br>
+Where <tt>derived_class_name</tt> is the name of the derived class and <tt>base_class_name</tt> is the name of the class on which it is based. The <tt>public</tt> access specifier may be replaced by any one of the other access specifiers <tt>protected</tt> and <tt>private</tt>.
+This access specifier limits the most accessible level for the members
+inherited from the base class: The members with a more accessible level
+are inherited with this level instead, while the members with an equal
+or more restrictive access level keep their restrictive level in the
+derived class.<br>
+<br>
+<div class="auto"><table class="split"><tbody><tr><td class="rownum"><tt>1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10<br>11<br>12<br>13<br>14<br>15<br>16<br>17<br>18<br>19<br>20<br>21<br>22<br>23<br>24<br>25<br>26<br>27<br>28<br>29<br>30<br>31<br>32<br>33<br></tt></td>
+<td class="source"><pre><code><cite>// derived classes</cite>
+<dfn>#include &lt;iostream&gt;</dfn>
+<var>using</var> <var>namespace</var> std;
+
+<var>class</var> CPolygon {
+  <var>protected</var>:
+    <var>int</var> width, height;
+  <var>public</var>:
+    <var>void</var> set_values (<var>int</var> a, <var>int</var> b)
+      { width=a; height=b;}
+  };
+
+<var>class</var> CRectangle: <var>public</var> CPolygon {
+  <var>public</var>:
+    <var>int</var> area ()
+      { <var>return</var> (width * height); }
+  };
+
+<var>class</var> CTriangle: <var>public</var> CPolygon {
+  <var>public</var>:
+    <var>int</var> area ()
+      { <var>return</var> (width * height / 2); }
+  };
+  
+<var>int</var> main () {
+  CRectangle rect;
+  CTriangle trgl;
+  rect.set_values (4,5);
+  trgl.set_values (4,5);
+  cout &lt;&lt; rect.area() &lt;&lt; endl;
+  cout &lt;&lt; trgl.area() &lt;&lt; endl;
+  <var>return</var> 0;
+}</code></pre></td>
+<td class="output"><pre><samp>20
+10</samp></pre></td></tr></tbody></table></div>
+<br>
+<br>
+The objects of the classes <tt>CRectangle</tt> and <tt>CTriangle</tt> each contain members inherited from <tt>CPolygon</tt>. These are: <tt>width</tt>, <tt>height</tt> and <tt>set_values()</tt>.<br>
+<br>
+The <tt>protected</tt> access specifier is similar to <tt>private</tt>.
+Its only difference occurs in fact with inheritance. When a class
+inherits from another one, the members of the derived class can access
+the protected members inherited from the base class, but not its
+private members.<br>
+<br>
+Since we wanted <tt>width</tt> and <tt>height</tt> to be accessible from members of the derived classes <tt>CRectangle</tt> and <tt>CTriangle</tt> and not only by members of <tt>CPolygon</tt>, we have used <tt>protected</tt> access instead of <tt>private</tt>.<br>
+<br>
+We can summarize the different access types according to who can access them in the following way: <br>
+<br>
+<table class="boxed">
+<tbody><tr><th>Access</th><th>public</th><th>protected</th><th>private</th></tr>
+<tr><td>members of the same class</td><td>yes</td><td>yes</td><td>yes</td></tr>
+<tr><td>members of derived classes</td><td>yes</td><td>yes</td><td>no</td></tr>
+<tr><td>not members</td><td>yes</td><td>no</td><td>no</td></tr>
+</tbody></table>
+<br>
+Where "not members" represent any access from outside the class, such as from <tt>main()</tt>, from another class or from a function.<br>
+<br>
+In our example, the members inherited by <tt>CRectangle</tt> and <tt>CTriangle</tt> have the same access permissions as they had in their base class <tt>CPolygon</tt>:<br>
+<br>
+<div class="auto"><table class="snippet"><tbody><tr><td class="rownum"><tt>1<br>2<br>3<br>4<br>5<br></tt></td>
+<td class="source"><pre><code>CPolygon::width           <cite>// protected access</cite>
+CRectangle::width         <cite>// protected access</cite>
+
+CPolygon::set_values()    <cite>// public access</cite>
+CRectangle::set_values()  <cite>// public access </cite></code></pre></td></tr></tbody></table></div>
+<br>
+<br>
+This is because we have used the <tt>public</tt> keyword to define the inheritance relationship on each of the derived classes:<br>
+<br>
+<div class="auto"><table class="snippet"><tbody><tr><td class="rownum"><tt>&nbsp;</tt></td>
+<td class="source"><pre><code><var>class</var> CRectangle: <var>public</var> CPolygon { ... }</code></pre></td></tr></tbody></table></div>
+<br>
+<br>
+This <tt>public</tt> keyword after the colon (<tt>:</tt>) denotes the most accessible level the members inherited from the class that follows it (in this case <tt>CPolygon</tt>) will have. Since <tt>public</tt>
+is the most accessible level, by specifying this keyword the derived
+class will inherit all the members with the same levels they had in the
+base class.<br>
+<br>
+If we specify a more restrictive access level like <tt>protected</tt>,
+all public members of the base class are inherited as protected in the
+derived class. Whereas if we specify the most restricting of all access
+levels: <tt>private</tt>, all the base class members are inherited as private.</td></tr></tbody></table></div></body></html>

@@ -1,0 +1,228 @@
+#include<iostream>
+using namespace std;
+
+int len=12;
+
+int myarray[] ={3,1,5,7,1,0,4,2,9,4,3,1};
+int check;
+
+//func 1
+int sum(int a[])
+{
+    int sumw=0;
+    for(int i=0; i<len; i++)
+    {
+    sumw+=a[i];
+    }
+    return sumw;
+}
+
+//func 2
+int fleast(int g[])
+{
+    int l=g[0];
+for(int i=0; i<len; i++)
+{
+if(l>g[i])
+l=myarray[i];
+}
+return l;
+}
+
+//func 3
+int mostocc(int arr[])
+{
+    int mc;
+      
+  for( int i=1;i<len ;i++ )//for n-1 passes
+			{
+				//In pass i,compare the first n-i elements
+				//with their next elements 
+				for( int j=0; j<len-1; j++)
+				{
+					if(arr[j] > arr[j+1])
+					{
+						int temp;
+						temp = arr[j];
+						arr[j] = arr[j+1];
+						arr[j+1] = temp;
+					
+					}
+	
+				}
+			}
+			for( int i=1;i<len ;i++ )
+			{
+                 if((arr[i]==arr[i + 1])&& (arr[i + 1] ==arr[i + 2]))
+                 mc=arr[i];
+                 
+                 }
+                 
+                 return mc;
+  
+  
+}
+
+//func 4
+
+int arrange(int arr[])
+{
+    
+  for( int i=1;i<len ;i++ )//for n-1 passes
+			{
+				//In pass i,compare the first n-i elements
+				//with their next elements 
+				for( int j=0; j<len-1; j++)
+				{
+					if(arr[j] > arr[j+1])
+					{
+						int temp;
+						temp = arr[j];
+						arr[j] = arr[j+1];
+						arr[j+1] = temp;
+					
+					}
+	
+				}
+			}
+			for( int i=1;i<len ;i++ )
+			{
+                 cout<<arr[i]<<" "<<endl;
+                 }
+  
+}
+
+//func 5
+
+int tpose(int h[])
+{
+  for(int i=0; i<len; i++)
+   {
+           cout<<h[i]<<"\n";
+}                                           
+                                       
+}
+
+
+main()
+{
+      l:system("CLS");
+      
+      cout<<"          ARRAYSOFT-OPERATIONAL MENU\n\n"<<endl;
+      cout<<"1. Sum elements"<<"\t"<<"        2. Least Element"<<endl;
+      cout<<"3. Most Occured "<<"\t"<<"4. Arrange Element"<<endl;
+      cout<<"5. Transpose Element"<<"\t"<<"6. Exit ARRAYSOFT"<<endl;
+      
+      
+      cout<<"\n";
+      int test;
+      cin>>check;
+      
+      
+      switch(check)
+      {
+                   case 1:
+                        cout<<"You have requested to sum the elemenst and the sum is: "<<endl;
+                       
+                        
+                        cout<<"The sum of the array is: "<<sum(myarray)<<endl;
+                        c1:cout<<"\nPress one to return to the main menu"<<endl;
+                        cin>>test;
+                        if(test==1)
+                        goto l;
+                        else
+                        goto c1;
+                        cin.get();
+                        cin.get();
+                        
+                        break;
+                        
+                  case 2:
+                            
+                        cout<<"You have requested to view the least element"<<endl;
+                        
+                        
+                        
+                        cout<<"The least element in the array is: "<<fleast(myarray)<<endl;
+                        
+                       c2: cout<<"\nPress one to return to the main menu"<<endl;
+                        cin>>test;
+                        if(test==1)
+                        goto l;
+                        else
+                        goto c2;
+                        cin.get();
+                        cin.get(); 
+                        break; 
+                        
+                   case 3:
+                             cout<<"You have requested to view the most occurred element"<<endl;
+                             cout<<"Most occured is: "<<mostocc(myarray)<<endl;
+                             
+                        c3:cout<<"\nPress one to return to the main menu"<<endl;
+                        cin>>test;
+                        if(test==1)
+                        goto l;
+                        else
+                        goto c3;
+                             
+                             break;
+                             
+                             
+                   c4:case 4:
+                                  cout<<"You have requested to arrange the element"<<endl;
+                                  arrange(myarray);
+                                  
+                        cout<<"\nPress one to return to the main menu"<<endl;
+                        cin>>test;
+                        if(test==1)
+                        goto l;
+                        else
+                        goto c4;
+                                  cin.get();
+                                  cin.get();
+                                  break;
+                                  
+                     case 5:
+                     cout<<"You have requested to transpose the element"<<endl;
+                                       
+                     cout<<tpose(myarray)<<endl;
+                     c5:cout<<"\nPress one to return to the main menu"<<endl;
+                        cin>>test;
+                        if(test==1)
+                        goto l;
+                        else
+                        goto c5;
+                                                 
+                     cin.get();
+                     cin.get();
+                                       
+                     break;
+                                       
+                     case 6:
+                                             cout<<"You have requested to exit"<<endl;
+                                             cout<<"Press any key to about the program...\a\a"<<endl;
+                                             system("EXIT");
+                                             break;
+                                             
+                                             
+                     default:
+                             
+                             cout<<"Wrong input"<<endl;
+                             de:cout<<"\nPress one to return to the main menu"<<endl;
+                            cin>>test;
+                            if(test==1)
+                            goto l;
+                            else
+                            goto de;
+        
+                             cin.get();
+                             cin.get();
+                             
+        
+                        
+      
+      }
+      cin.get();
+      cin.get();
+}

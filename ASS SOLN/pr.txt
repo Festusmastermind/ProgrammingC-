@@ -1,0 +1,45 @@
+#include<iostream>
+#include<cmath>
+using namespace std;
+
+main()
+{
+      int m;
+      cout<<"Enter number of element to input"<<endl;
+      cin>>m;
+      
+      int siz[m];
+      for(int i=0; i<m; i++)
+      {
+              cout<<"Enter vaccum A["<<i + 1<<"]"<<endl;
+              cin>>siz[i];
+      }
+      
+      //outputting
+      
+      for(int i=0; i<m; i++)
+      {
+              cout<<"  "<<siz[i];
+              
+      }
+      
+      //checking for prime
+      cout<<"\n\n";
+      for(int i=2; i<=m+1; i++)
+      {
+              for(int j=2; j*j<=i; j++)
+              {
+                      if(siz[i-2]%j==0)
+                      
+                      cout<<siz[i-2]<<"is not prime"<<endl;
+                      
+                      else if(j+1 > sqrt(siz[i-2]))
+                      
+                      cout<<siz[i]-2<<" is prime"<<endl;
+                      
+              }
+      }
+      
+      cin.get();
+      cin.get();
+}

@@ -1,0 +1,47 @@
+import java.util.Scanner;
+public class me {
+	public static void main (String args[])
+	{
+		Scanner myt = new Scanner (System.in);
+		
+		int boxer1, boxer2;
+		int total1 = 0;
+		int total2 = 0;
+		int j = 0;
+		int point1;
+		int point2;
+		int i;
+		for (i=0; i<12; i++)
+		{
+			 j = j + 1;
+			System.out.printf("round %d Enter the point of boxer 1:",j);
+			boxer1 = myt.nextInt();
+			System.out.printf("\t round %d Enter the point of boxer 2:",j);
+			boxer2 = myt.nextInt();
+			
+			total1 = total1 + boxer1;
+			total2 = total2 + boxer2;
+			
+		}
+		point1 = total1 / 12;
+		point2 = total2 / 12;
+		
+		System.out.printf("\nthe result between boxer1 = %d and boxer 2 = %d",point1,point2);
+		if (point1>point2)
+		{
+			System.out.printf("\nthe winner is boxer1 with %d point",point1);
+			
+		}
+		else if (point1<point2)
+		{
+			System.out.printf("the winner is boxer2 with %d point",point2);
+			
+		}
+		else
+		{
+			System.out.printf("the  boxer1 point is %d and boxer2 pointsis %d, same point",point1,point2);
+			
+		}
+	}
+
+}
